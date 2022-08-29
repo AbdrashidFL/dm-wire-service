@@ -1,0 +1,108 @@
+.reviews
+ padding: 0 0 124px 0
+ position: relative
+ &-title
+  font-family: 'Futura PT Demi'
+  font-weight: 600
+  font-size: 36px
+  line-height: 46px
+  color: #000000
+  padding-top: 74px
+  text-align: center
+ &-subtitle
+  font-family: 'Futura PT Book'
+  font-weight: normal
+  font-size: 24px
+  line-height: 31px
+  text-align: center
+  color: #000000
+  padding-top: 10px
+  padding-bottom: 53px
+ &-sliders
+  width: 90vw
+  margin: auto
+ &-slider
+  padding: 8px 8px 43px 8px
+  background: #FFFFFF
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25)
+  border-radius: 10px
+  z-index: 1
+  margin-right: 4vw
+  margin-left: 4vw
+  &__date
+   font-weight: 300
+   font-size: 12px
+   line-height: 15px
+   color: #000000
+  &__name
+   font-family: 'Futura PT Book'
+   font-weight: normal
+   font-size: 24px
+   line-height: 31px
+   color: #000000
+   padding-top: 20px
+  &__text
+   font-family: 'Futura PT Book'
+   font-weight: normal
+   font-size: 18px
+   line-height: 23px
+   color: #000000
+   padding-top: 10px
+ &-arrow
+  display: flex
+  justify-content: center
+  align-items: center
+  top: 50%
+  width: 60px
+  height: 60px
+  position: absolute
+  cursor: pointer
+  border-radius: 2px
+  background: #FFFFFF
+  transition: all 0.5s
+  padding: 10px
+  border-radius: 50%
+  border: 1px solid #F87F3D
+  z-index: 1
+  svg
+   width: 12px
+   height: 20px
+  &:hover
+   background: linear-gradient(180deg, #F89661 0%, #F87F3D 100%), url(../img/reviews/left.png)
+  &__prev
+   left: 34.5%
+   &:hover path
+    fill: #FFFFFF
+  &__next
+   right: 34.5%
+   &:hover path
+    fill: #FFFFFF
+   transform: rotate(180deg)
+.slick
+ &-list
+  padding-top: 10px !important
+  padding-bottom: 10px !important
+ &-slide
+  filter: blur(2px)
+ &-dots
+  li
+   button
+    &::before
+     opacity: 1
+     border-radius: 50%
+     border: 1px solid #F87F3D
+     background: none
+     color: transparent
+     background: none
+     width: 7px
+     height: 7px
+ &-active
+  button
+   opacity: 1
+   &::before
+    color: #F87F3D !important
+    background: #F87F3D !important
+    opacity: 1 !important
+    content: '' !important
+ &-center
+  filter: blur(0)
